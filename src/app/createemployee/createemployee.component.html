@@ -1,0 +1,9 @@
+<p>createemployee works!</p>
+<h1>Employee Management Mini Project</h1>
+<p>Add Employee</p>
+<form (submit)="create()">
+    Firstname: <input type="text" [(ngModel)]="emp.firstName"><br>
+    Lastname:  <input type="text"[(ngModel)]="emp.lastName"> <br>
+    salary: <input type="number" [(ngModel)]="emp.salary">
+    <button type="submit">submit</button>
+</form>

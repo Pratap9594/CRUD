@@ -1,0 +1,7 @@
+<p>updateemployee works!</p>
+<form (submit)="updateEmployee()">
+FirstName:<input type="text" name="firstName" [(ngModel)]="employee.firstName" id=""><br>
+LasttName:<input type="text" name="lasttName" [(ngModel)]="employee.lastName" id=""><br>
+salary:<input type="number" name="salary" [(ngModel)]="employee.salary" id=""><br>
+submit:<button type="submit" class="btn btn-primary">update</button>
+</form>

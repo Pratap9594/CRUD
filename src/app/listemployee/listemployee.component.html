@@ -1,0 +1,19 @@
+<p>listemployee works!</p>
+<table>
+    <tr>
+        <th>firstName</th>
+        <th>lastName</th>
+        <th>salary</th>
+        <th>action</th>
+    </tr>
+    <tr *ngFor="let emp of employee">
+        <td>{{emp.firstName}}</td>
+        <td>{{emp.lastName}}</td>
+        <td>{{emp.salary}}</td>
+        <td><a [routerLink]="['update/',emp.id]">Edit</a></td>
+        <td><button (click)="deleteEmp(emp.id)">Delete</button></td>
+        <td><a [routerLink]="['view/',emp.id]">view</a></td>
+
+
+    </tr>
+</table>
